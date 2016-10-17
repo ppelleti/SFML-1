@@ -1040,7 +1040,7 @@ if( BUILD_WITH_ANDROID_NDK )
   else()
    set( ANDROID_ABI_INCLUDE_DIRS "${ANDROID_CXX_ROOT}/llvm-libc++abi/include" )
   endif()
-  set( ANDROID_STL_INCLUDE_DIRS     "${ANDROID_LLVM_ROOT}/libcxx/include"
+  set( ANDROID_STL_INCLUDE_DIRS     "${ANDROID_LLVM_ROOT}/include"
                                     "${ANDROID_ABI_INCLUDE_DIRS}" )
   # android support sfiles
   include_directories ( SYSTEM ${ANDROID_NDK}/sources/android/support/include )
